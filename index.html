@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <title>Beach</title>
+</head>
+<body>
+    <div class="banner">
+        <video autoplay="" muted="" loop="" >
+            <source src="beachT.mp4" type="video/mp4" />
+        </video>
+        <div id="bg" ></div>
+        <audio class="play" id="audio" controls autoplay>
+            <source src="pedro-capo-farruko-calma-remix-official-video.mp3" type="audio/mp3">
+          </audio>
+        <script>
+            let bg = document.querySelector('#bg')
+            var x = document.getElementById("audio");
+            x.currentTime = 37;
+            window.addEventListener('scroll', function(){
+                x.play()
+                let value = window.scrollY
+                bg.style.backgroundSize = 200 + value*20 +'px'
+            })
+        </script>
+    </div>
+</body>
+</html>
