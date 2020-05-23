@@ -31,6 +31,7 @@ body {
     z-index: 1000;
     transform: perspective(2000px) rotate(-10deg);
     box-shadow: inset 20px 0 50px rgba(0,0,0,.5);
+    margin-top: 200px;
 }
 
 .card .imgBox {
@@ -39,7 +40,7 @@ body {
     position: relative;
     border: 1px solid #000;
     box-sizing: border-box;
-    transform-origin: left;
+    transform-origin: top;
     z-index: 1;
 }
 
@@ -49,7 +50,7 @@ body {
 }
 
 .card:hover .imgBox{
-    transform: rotateY(-135deg);
+    transform: rotateX(-135deg);
 }
 
 .card .imgBox .img{
